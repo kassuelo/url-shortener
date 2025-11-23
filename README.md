@@ -1,10 +1,24 @@
 # url-shortener
 
-Um encurtador de URLs simples feito em Clojure, usando Ring, Compojure e Hiccup. Permite enviar uma URL longa e receber um link curto para redirecionamento. Armazena tudo em memória e é ideal para estudos.
+A simple URL shortener built with Clojure, using Ring, Compojure, and Hiccup.
+It allows you to submit a long URL and receive a short link such as http://localhost:3000/AbC123, which automatically redirects to the original URL.
+All data is stored in memory (using an atom), making this project ideal for learning and experimentation.
 
 ## Usage
 
-Para usar, execute o servidor com lein run e acesse http://localhost:3000. Envie uma URL pelo formulário e receba um endereço encurtado no formato /u/<codigo>. Acessar esse código redireciona para a URL original.
+To use the application, start the server with:
+
+lein run
+
+Then open your browser and go to:
+
+http://localhost:3000
+
+Submit any long URL through the form, and the application will generate a short link in the format:
+
+http://localhost:3000/<id>
+
+Accessing this link will redirect you to the original URL stored in memory.
 
 
 ## License
