@@ -1,13 +1,45 @@
-/target
-/classes
-/checkouts
-profiles.clj
-pom.xml
-pom.xml.asc
-*.jar
+# =====================================================================
+# Clojure standard ignores
+# =====================================================================
+
+# Leiningen
+/target/
+/profiles.clj
+
+# Clojure CLI tools cache
+/.cpcache/
+
+# REPL files
+.nrepl-port
+
+# Linter (clj-kondo) cache
+/.clj-kondo/
+
+# Hotload cache (shadow-cljs, figwheel, etc.)
+/out/
+/public/js/compiled/
+/resources/public/js/compiled/
+
+# Java / Maven / Gradle stuff
 *.class
+*.jar
+*.war
+*.ear
+/.m2/
+.gradle/
+
+# Editor / OS files
+.DS_Store
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.iml
+
+# Logs
+logs/
+*.log
+
+# Other temp
 /.lein-*
-/.nrepl-port
-/.prepl-port
-.hgignore
-.hg/
